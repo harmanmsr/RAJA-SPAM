@@ -1,0 +1,26 @@
+### RAJA SPAM BOT BY HARMAN M
+
+# package
+import discord
+
+# variable
+client = discord.Client()
+# array
+salam = ["hi","hai","hey","ckp tw"]
+kasar = ["kau anjing","anjing"]
+
+# Peristiwa message spam kepada client(discord)
+# Jika async dihapus maka sintaks await tidak bisa terdeteksi
+@client.event
+async def on_message(message):
+    for i in range(len(salam)):
+        if salam[i] in message.content:
+            for i in range(10):
+                await message.channel.send("ANJING LU!!!")
+    for i in range(len(kasar)):
+        if kasar[i] in message.content:
+            for i in range(10):
+                await message.channel.send("KASAR KALI KAU")
+
+# TOKEN BOT
+client.run("Nzk1OTI3MzU0MDYwODMyNzg4.X_QfHA.s3P45szz5BQlxW4xVEI-ngJ060Y")
