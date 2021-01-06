@@ -24,4 +24,4 @@ async def on_message(message):
                 await message.channel.send("KASAR KALI KAU")
 
 # TOKEN BOT
-client.run("Nzk1OTI3MzU0MDYwODMyNzg4.X_QfHA.s3P45szz5BQlxW4xVEI-ngJ060Y")
+client.run("BOT TOKEN")
